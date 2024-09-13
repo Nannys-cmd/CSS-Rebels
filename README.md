@@ -1,4 +1,4 @@
-# CSS-Rebels
+CSS-Rebels
 
 Proyecto en grupo para el curso Diseño Web de Tecno 3F
 
