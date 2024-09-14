@@ -1,0 +1,59 @@
+.container{
+    height: 350px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    perspective: 500px;
+    margin-top: 50px;
+    margin-left: 320px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    background: url(./images/Imagen\ de\ WhatsApp\ 2024-09-13\ a\ las\ 15.15.01_08e177d9.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    filter: drop-shadow(0px 7px 21px #641203);
+    animation: rotar 5s linear infinite;
+
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(-180deg);
+    }
+}
+
+.bottom_part{
+    width: 10rem;
+    height: 27rem;
+    position: absolute;
+    bottom: -94px;
+    background: #242424;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #11111136;
+    transform: rotateX(90deg); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_part::before{
+    content: "";
+    width: 5rem;
+    height: 17rem;
+    position: absolute;
+    bottom: 5rem;
+    background: #641203;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 10px 10px #11111136;
+    filter: blur(30px);
+}
