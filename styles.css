@@ -1,23 +1,27 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo general del body */
 body {
     background-image: url('./images/fondo1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-body, p, a {
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Tamaño base de fuente */
+    color: #333; /* Color de texto por defecto */
 }
 
+/* Configuración del html para smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+/* Estilos para el título principal */
 .titulo {
     text-align: center;
     color: #fcfcfc;
@@ -25,6 +29,7 @@ html {
     margin-top: 20px;
 }
 
+/* Estilos del menú principal */
 .menu {
     display: flex;
     justify-content: center;
@@ -55,7 +60,7 @@ html {
     color: #ee1414;
 }
 
-/* Estilizar las secciones de las bandas */
+/* Estilos para las secciones de bandas */
 .banda {
     margin: 20px auto;
     padding: 20px;
@@ -63,56 +68,9 @@ html {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333; /* Color de texto por defecto */
 }
 
 /* Colores personalizados para cada banda */
-.banda.nirvana {
-    background-color: #f55d5d; /* Rojo oscuro, representando la intensidad del grunge */
-}
-
-.banda.queen {
-    background-color: #af3b2e; /* Rojo intenso, evocando el dramatismo de la banda */
-}
-
-.banda.beatles {
-    background-color: #fc3939; /* Rojo brillante, simbolizando la energía de los Beatles */
-}
-
-.banda.led-zeppelin {
-    background-color: #000; /* Negro para un look dramático */
-    color: #ffd700; /* Dorado para detalles, representando el virtuosismo */
-}
-
-.banda.pink-floyd {
-    background-color: #000; /* Negro para un fondo oscuro */
-    color: #ff00ff; /* Magenta para detalles, evocando la psicodelia */
-}
-
-.banda.metallica {
-    background-color: #333; /* Gris oscuro o casi negro, para un look metálico */
-    color: #fff; /* Blanco para el texto, destacando sobre el fondo oscuro */
-}
-
-.banda.acdc {
-    background-color: #000; /* Negro para una apariencia poderosa */
-    color: #ff0000; /* Rojo intenso para detalles, representando la energía de los shows */
-}
-
-.banda.rolling-stones {
-    background-color: #6a0d91; /* Morado oscuro, para un toque atrevido */
-    color: #fff; /* Blanco para el texto */
-}
-
-.banda.radiohead {
-    background-color: #b0c4de; /* Gris pálido para un look frío y abstracto */
-    color: #000; /* Negro para el texto */
-}
-
-.banda.guns-n-roses {
-    background-color: #c8102e; /* Rojo intenso, para un look vibrante y rebelde */
-    color: #ffd700; /* Dorado para detalles, evocando el estilo glam */
-}/* Colores personalizados para cada banda */
 .banda.nirvana {
     background-color: #00274d; /* Azul oscuro, representando la atmósfera del grunge */
     color: #f5f5dc; /* Amarillo pálido para un buen contraste */
@@ -163,6 +121,7 @@ html {
     color: #ffd700; /* Dorado para detalles, evocando el estilo glam */
 }
 
+/* Imágenes */
 img {
     max-width: 100%;
     height: auto;
@@ -180,6 +139,7 @@ img {
     border-radius: 10px;
 }
 
+/* Estilo de los párrafos dentro de las secciones de bandas */
 .banda p {
     text-align: justify;
     font-size: 1rem;
@@ -187,6 +147,7 @@ img {
     margin: 20px 0;
 }
 
+/* Estilos para el footer */
 footer {
     background-color: #e2d4cc;
     padding: 10px 20px;
@@ -195,6 +156,7 @@ footer {
     width: 100%;
 }
 
+/* Estilos para los enlaces de redes sociales */
 .social-media a {
     margin: 0 10px;
     font-size: 1.2em;
@@ -204,4 +166,39 @@ footer {
 
 .social-media a:hover {
     color: #ee1414;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opciones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .opciones a {
+        padding: 8px;
+    }
+
+    .imagen-container img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .titulo {
+        font-size: 1.8em;
+    }
+
+    .opciones {
+        gap: 15px;
+    }
 }
