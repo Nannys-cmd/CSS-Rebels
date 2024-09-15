@@ -1,71 +1,120 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-image: url('./images/fondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body, p, a {
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     color: #ee1414;
     font-size: 2em;
     margin-top: 20px;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 
-.opciones{
+.opciones {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60px;
+    padding: 10px;
+    gap: 20px;
 }
 
-.opciones li{
-    font-size: 1.2em;
-    margin-right: 10px;
-    display: block;
-}
-
-.opciones a{
+.opciones a {
     text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
 }
 
-
-img{
-    width: 100%;
-    height: auto;
-    
-
+.opciones a:hover {
+    color: #ee1414;
 }
 
-
-
-p {
+/* Estilizar las secciones de las bandas */
+.banda {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
     text-align: center;
-    font-family: verdana;
-    font-size: 20px;
-    margin-bottom: 10%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Colores personalizados para cada banda */
+.banda.nirvana {
+    background-color: #f55d5d;
+}
 
+.banda.queen {
+    background-color: #af3b2e;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Centrar las imágenes */
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagen-container img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.banda p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px 0;
+}
 
 footer {
     background-color: #e2d4cc;
     padding: 10px 20px;
     color: black;
     text-align: center;
-    position: static;
-    bottom: 0;
     width: 100%;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-media a:hover {
+    color: #ee1414;
 }
