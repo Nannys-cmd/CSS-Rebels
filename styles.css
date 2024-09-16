@@ -36,7 +36,7 @@ html {
     align-items: center;
     margin-top: 20px;
     width: 100%;    
-    
+    background-color: #333;
 }
 
 .opciones {
@@ -44,7 +44,8 @@ html {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    padding: 10px;
+    padding: 0px;
+    margin: 0px;
     gap: 20px;
 }
 
@@ -53,6 +54,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    margin: 0 15px;
     margin-left: 60px;
 }
 
@@ -77,6 +79,12 @@ html {
     
 }
 
+/* Menú desplegable */
+.menu .opciones.show-menu {
+    display: block;
+}
+
+
 /* Estilos para las secciones de bandas */
 .banda {
     margin: 20px auto;
@@ -94,8 +102,6 @@ html {
 .titulo-banda:hover{
     transform: scale(1.5);
 }
-
-
 
 /* Colores personalizados para cada banda */
 .banda.nirvana {
