@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,6 +32,9 @@ html {
     align-items: center;
     margin-top: 20px;
     width: 100%;
+    font-family: "Montagu Slab", serif;
+    color: white;
+    font-size: 20px;
 }
 
 .opciones {
@@ -43,16 +47,22 @@ html {
 }
 
 .opciones a {
+    border: 2px solid transparent;/* Borde transparente para evitar que los elementos se muevan */
     text-decoration: none;
     color: #333;
     padding: 10px;
     font-weight: bold;
     transition: color 0.3s ease;
     text-transform: uppercase;
+    transition: transform 0.3s ease, border 0.3s ease;/* Suaviza las transiciones de color y borde */
 }
 
-.opciones a:hover {
-    color: #ee1414;
+.opciones a:hover {    
+    transform: scale(1.2); /* Agranda el título un 20% */
+    color: #0288d1; /* Cambia el color del título */
+    border: 2px solid #0288d1;/* Hace visible el borde */
+    border-radius: 5px; 
+    
 }
 
 /* Estilizar las secciones de las bandas */
@@ -65,6 +75,16 @@ html {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     color: #333; /* Color de texto por defecto */
 }
+
+.titulo-banda{
+    transition: transform 0.4s ease;
+}
+
+.titulo-banda:hover{
+    transform: scale(1.5);
+}
+
+
 
 /* Colores personalizados para cada banda */
 .banda.nirvana {
@@ -193,6 +213,7 @@ footer {
     color: black;
     text-align: center;
     width: 100%;
+    margin-top: 30px;
 }
 
 .social-media a {
