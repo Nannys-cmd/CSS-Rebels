@@ -31,10 +31,8 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    width: 100%;
-    font-family: "Montagu Slab", serif;
-    color: white;
-    font-size: 20px;
+    width: 100%;    
+    
 }
 
 .opciones {
@@ -46,10 +44,20 @@ html {
     gap: 20px;
 }
 
+.opciones li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-left: 60px;
+}
+
 .opciones a {
+    font-family: "Montagu Slab", serif;
     border: 2px solid transparent;/* Borde transparente para evitar que los elementos se muevan */
     text-decoration: none;
-    color: #333;
+    color: white;
+    font-size: 20px;
     padding: 10px;
     font-weight: bold;
     transition: color 0.3s ease;
