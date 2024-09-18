@@ -201,3 +201,61 @@ footer {
 .social-media a:hover {
     color: #ee1413;
 }
+
+/*Estilos Formulario*/
+
+h3 {
+
+    font-family: "Montagu Slab", serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+form {
+    background-color: #000000;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto; 
+    box-shadow: 0 2px 4px rgba(7, 54, 95, 0.274);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 1px;
+    color: #ffd700;
+    font-family: sans-serif;
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 1px;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+   font-family: sans-serif;
+  }
+  
+  
+  input[type="submit"] {
+    background-color:#ee1413;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+  }
+  
