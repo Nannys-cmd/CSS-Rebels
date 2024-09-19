@@ -1,19 +1,18 @@
 @media (max-width: 600px) {
     .opciones {
-        display: none;
         flex-direction: column;
         width: 100%;
         background-color: #333;
         gap: 10px;
         justify-content: center;
-        /* Aseguramos que el menú esté centrado */
         align-items: center;
+        display: flex; /* Add this rule */
     }
 
-    .opciones.show-menu {
-        display: flex;
-        /* Mostrar el menú cuando la clase 'show-menu' está activa */
+    .opciones:not(.show-menu) {
+        display: none; /* Hide the menu when it's not active */
     }
+}
 
     .opciones li {
         margin: 10px 0;
@@ -35,7 +34,7 @@
         width: 100%;
         /* Aseguramos que ocupe todo el ancho */
     }
-}
+
 
 .opciones a {
     padding: 8px;
