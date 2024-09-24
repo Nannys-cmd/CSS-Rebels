@@ -1,3 +1,4 @@
+/* Estilos para pantallas pequeñas (max-width: 600px) */
 @media (max-width: 600px) {
     .opciones {
         flex-direction: column;
@@ -6,46 +7,72 @@
         gap: 10px;
         justify-content: center;
         align-items: center;
-        display: flex; /* Add this rule */
+        display: none; /* Ocultamos el menú por defecto */
+        position: absolute;
+        top: 60px; /* Ajusta según la altura del menú */
+        left: 0;
+        z-index: 1;
+        display: none;
     }
 
-    .opciones:not(.show-menu) {
-        display: none; /* Hide the menu when it's not active */
-    }
-}
-
-    .opciones li {
-        margin: 10px 0;
+    .opciones.show-menu {
+        display: flex; /* Mostramos el menú cuando está activo */
     }
 
     .nav-toggle {
         display: block;
-        /* Mostrar el botón del menú */
-        font-size: 2em;
-        background: none;
-        border: none;
+        font-size: 1.5em;
         color: white;
         cursor: pointer;
+        margin: 10px; /* Añadimos algo de margen */
     }
 
     .menu {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        /* Aseguramos que ocupe todo el ancho */
+        width: 100%; /* Aseguramos que ocupe todo el ancho */
     }
 
+    .opciones a {
+        padding: 15px; /* Aumentamos el padding para que el área clickeable sea más grande */
+        font-size: 1.2em; /* Aumentamos el tamaño de la fuente en pantallas pequeñas */
+        color: white;
+        text-align: center;
+    }
 
-.opciones a {
-    padding: 8px;
+    .opciones li {
+        margin: 10px 0;
+    }
+
+    .imagen-container img {
+        max-width: 100%;
+    }
 }
 
-.imagen-container img {
-    max-width: 100%;
-}
-
+/* Estilos para pantallas grandes (min-width: 601px) */
 @media (min-width: 601px) {
     .nav-toggle {
-        display: none;
+        display: none; /* Ocultamos el botón de menú en pantallas grandes */
+    }
+
+    .opciones {
+        display: flex; /* Mostramos el menú en su estado por defecto en pantallas grandes */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent; /* Fondo transparente para el menú en pantallas grandes */
+        position: static; /* Menú estático en pantallas grandes */
+        gap: 20px; /* Espaciado entre los elementos del menú */
+    }
+
+    .opciones a {
+        padding: 10px 20px;
+        font-size: 1em; /* Tamaño de fuente normal en pantallas grandes */
+        color: white;
+        text-decoration: none;
+    }
+
+    .opciones li {
+        margin: 0;
     }
 }

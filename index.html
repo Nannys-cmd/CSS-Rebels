@@ -2,6 +2,12 @@
 <html lang="es">
 
 <head>
+    <style>
+        /* Oculta el contenido hasta que se cargue el CSS */
+        body {
+            visibility: hidden;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
@@ -23,13 +29,28 @@
             <div class="bottom_part"></div>
         </div>
         <nav class="menu">
-            <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+            <span class="nav-toggle">&#9776;</span> <!-- Botón de menú para pantallas pequeñas -->
             <ul class="opciones">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Musica</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Discografía</a>
+                    <div class="dropdown-content">
+                        <a href="Discografia/AcDc.html">AC/DC</a>
+                        <a href="Discografia/GunsNRoses.html">Guns N' Roses</a>
+                        <a href="Discografia/LedZeppelin.html">Led Zeppelin</a>
+                        <a href="Discografia/Metallica.html">Metallica</a>
+                        <a href="Discografia/Nirvana.html">Nirvana</a>
+                        <a href="Discografia/PinkFloyd.html">Pink Floyd</a>
+                        <a href="Discografia/Queen.html">Queen</a>
+                        <a href="Discografia/Radiohead.html">Radiohead</a>
+                        <a href="Discografia/TheBeatles.html">The Beatles</a>
+                        <a href="Discografia/TheRollingStones.html">The Rolling Stones</a>
+                    </div>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -74,7 +95,7 @@
             </div>
             <p>Pioneros del hard rock y heavy metal, Led Zeppelin es conocida por sus composiciones épicas y su
                 virtuosismo musical, con éxitos como Stairway to Heaven.</p>
-                <p>Prueba</p>
+            <p>Prueba</p>
         </section>
 
         <section class="musica banda pink-floyd">
@@ -127,7 +148,8 @@
             <div class="imagen-container">
                 <img src="./images/guns-n-roses.jpg" alt="Guns N' Roses">
             </div>
-            <p>Banda de rock estadounidense famosa por su energía rebelde y canciones como Sweet Child O' Mine y November Rain.</p>
+            <p>Banda de rock estadounidense famosa por su energía rebelde y canciones como Sweet Child O' Mine y
+                November Rain.</p>
         </section>
 
     </main>
@@ -141,6 +163,8 @@
         <p>&copy; 2024 Actividad Grupal - Grupo 3 - CSS Rebels - Tecno3F - Curso Diseño Web. Todos los derechos
             reservados.</p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
