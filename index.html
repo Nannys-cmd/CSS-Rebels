@@ -2,17 +2,11 @@
 <html lang="es">
 
 <head>
-    <style>
-        /* Oculta el contenido hasta que se cargue el CSS */
-        body {
-            visibility: hidden;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./animacion.css">
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/animacion.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <title>Actividad Grupal - CSS Rebels</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap"
@@ -29,44 +23,34 @@
             <div class="bottom_part"></div>
         </div>
         <nav class="menu">
-            <span class="nav-toggle">&#9776;</span> <!-- Botón de menú para pantallas pequeñas -->
+            <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
             <ul class="opciones">
-                <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Discografía</a>
-                    <div class="dropdown-content">
-                        <a href="Discografia/AcDc.html">AC/DC</a>
-                        <a href="Discografia/GunsNRoses.html">Guns N' Roses</a>
-                        <a href="Discografia/LedZeppelin.html">Led Zeppelin</a>
-                        <a href="Discografia/Metallica.html">Metallica</a>
-                        <a href="Discografia/Nirvana.html">Nirvana</a>
-                        <a href="Discografia/PinkFloyd.html">Pink Floyd</a>
-                        <a href="Discografia/Queen.html">Queen</a>
-                        <a href="Discografia/Radiohead.html">Radiohead</a>
-                        <a href="Discografia/TheBeatles.html">The Beatles</a>
-                        <a href="Discografia/TheRollingStones.html">The Rolling Stones</a>
-                    </div>
-                </li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discografia</a></li>             
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
-
     <main>
         <section class="musica banda nirvana">
-            <h2 class="titulo-banda">Nirvana</h2>
+            <h2 class="titulo-banda">Nirvana</h2> 
+            <div class="discografia-disco">
+                <a href="nirvana.html" >Discografía</a> 
+            </div>
             <div class="imagen-container">
                 <img src="./images/nirvana.jfif" alt="Nirvana">
             </div>
             <p>Banda de rock estadounidense formada hacia 1986 por Kurt Cobain y Krist Novoselic. A pesar de su corta
-                existencia como grupo, y del suicidio de Cobain en 1994, su música cosechó un tremendo éxito en todo el
+            existencia como griaupo, y del suicidio de Cobain en 1994, su música cosechó un tremendo éxito en todo el
                 mundo, hasta el punto de que Nirvana fue considerada una de las mejores bandas de rock de la época y la
                 abanderada del movimiento Grunge.</p>
         </section>
 
         <section class="musica banda queen">
             <h2 class="titulo-banda">Queen</h2>
+            <div class="discografia-disco">
+                <a href="queen.html">Discografía</a>
+            </div> 
             <div class="imagen-container">
                 <img src="./images/queen.jfif" alt="Queen">
             </div>
@@ -80,6 +64,10 @@
 
         <section class="musica banda beatles"> <!-- Agregamos la clase específica 'queen' -->
             <h2 class="titulo-banda">The Beatles</h2>
+            <div class="discografia-disco">
+                <a href="discografia/TheBeatles.html">Discografía</a>
+            </div>
+            
             <div class="imagen-container">
                 <img src="./images/beatles.jfif" alt="Beatles">
             </div>
@@ -90,16 +78,23 @@
 
         <section class="musica banda led-zeppelin">
             <h2 class="titulo-banda">Led Zeppelin</h2>
+            <div class="discografia-disco">
+                <a href="discografia/LedZeppelin.html">Discografía</a>
+            </div>
+            
             <div class="imagen-container">
                 <img src="./images/zeppelin.jfif" alt="Led Zeppelin">
             </div>
             <p>Pioneros del hard rock y heavy metal, Led Zeppelin es conocida por sus composiciones épicas y su
                 virtuosismo musical, con éxitos como Stairway to Heaven.</p>
-            <p>Prueba</p>
         </section>
 
         <section class="musica banda pink-floyd">
             <h2 class="titulo-banda">Pink Floyd</h2>
+            <div class="discografia-disco">
+                <a href="discografia/pinkfloyd.html">Discografía</a>
+            </div>
+            
             <div class="imagen-container">
                 <img src="./images/pink-floyd.jpg" alt="Pink Floyd">
             </div>
@@ -109,6 +104,10 @@
 
         <section class="musica banda metallica">
             <h2 class="titulo-banda">Metallica</h2>
+            <div class="discografia-disco">
+                <a href="discografia/Metalica.html">Discografia</a>
+            </div>
+            
             <div class="imagen-container">
                 <img src="./images/metallica.jpg" alt="Metallica">
             </div>
@@ -118,6 +117,10 @@
 
         <section class="musica banda acdc">
             <h2 class="titulo-banda">AC/DC</h2>
+            <div class="discografia-disco">
+                <a href="discografia/acdc.html">Discografia</a>
+            </div>
+            
             <div class="imagen-container">
                 <img src="./images/acdc.jpg" alt="AC/DC">
             </div>
@@ -127,6 +130,10 @@
 
         <section class="musica banda rolling-stones">
             <h2 class="titulo-banda">The Rolling Stones</h2>
+            <div class="discografia-disco">
+                <a href="discografia/rollingstones.html">Discografia</a>
+            </div>
+            
             <div class="imagen-container">
                 <img src="./images/rolling-stones.jpg" alt="The Rolling Stones">
             </div>
@@ -136,6 +143,9 @@
 
         <section class="musica banda radiohead">
             <h2 class="titulo-banda">Radiohead</h2>
+            <div class="discografia-disco">
+                <a href="radiohead.html">Discografia</a>
+            </div>
             <div class="imagen-container">
                 <img src="./images/radiohead.jpg" alt="Radiohead">
             </div>
@@ -145,12 +155,15 @@
 
         <section class="musica banda guns-n-roses">
             <h2 class="titulo-banda">Guns N' Roses</h2>
+            <div class="discografia-disco">
+                <a href="discografia/gunsandroses.html">Discografia</a>
+            </div>
             <div class="imagen-container">
                 <img src="./images/guns-n-roses.jpg" alt="Guns N' Roses">
             </div>
             <p>Banda de rock estadounidense famosa por su energía rebelde y canciones como Sweet Child O' Mine y
                 November Rain.</p>
-        </section>
+        </section>        
 
     </main>
 
@@ -163,8 +176,6 @@
         <p>&copy; 2024 Actividad Grupal - Grupo 3 - CSS Rebels - Tecno3F - Curso Diseño Web. Todos los derechos
             reservados.</p>
     </footer>
-
-    <script src="main.js"></script>
 </body>
 
 </html>
