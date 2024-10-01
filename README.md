@@ -14,7 +14,7 @@ Daniela Bastias.
 Dario Tamini.  
 Laura Cecilia Esplugas.  
 Luciano Altavista.  
-Nairim Maya.  
+Nairim Amaya.  
 Andrea Fontanella.  
 Diaz Romina Maria.  
 Cristian Agustin Zarate.  
