@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queen - CSS Rebels</title>      
+    <title>CSS Rebels - Queen</title>      
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/nirvana.css"> 
     <link rel="stylesheet" href="./CSS/animacion.css">
@@ -23,11 +23,44 @@
                 <!-- Base de la imagen que emite el resplandor -->
                 <div class="bottom_part"></div>
             </div>
-            <nav class="menu">
-                <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+            <nav class="menu">            
                 <ul class="opciones">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Discografia</a></li>             
+                    <li class="submenu-opcion">
+                        <a href="#">Discografía</a>
+                        <ul class="submenu">
+                            <li class="decada">
+                                <a href="#">Década de los 60</a>
+                                <ul class="submenu-bandas">
+                                    <li class="banda"><a href="./TheBeatles.html">The Beatles</a></li>
+                                    <li class="banda"><a href="./RollingStones.html">The Rolling Stones</a></li>
+                                </ul>
+                            </li>
+                            <li class="decada">
+                                <a href="#">Década de los 70</a>
+                                <ul class="submenu-bandas">
+                                    <li class="banda"><a href="./ledzeppelin.html">Led Zeppelin</a></li>
+                                    <li class="banda"><a href="./PinkFloyd.html">Pink Floyd</a></li>
+                                    <li class="banda"><a href="./queen.html">Queen</a></li>
+                                    <li class="banda"><a href="./ACDC.html">AC/DC</a></li>
+                                </ul>
+                            </li>
+                            <li class="decada">
+                                <a href="#">Década de los 80</a>
+                                <ul class="submenu-bandas">
+                                    <li class="banda"><a href="./metallica.html">Metallica</a></li>
+                                    <li class="banda"><a href="./GunsNRoses.html">Guns N' Roses</a></li>
+                                </ul>
+                            </li>
+                            <li class="decada">
+                                <a href="#">Década de los 90</a>
+                                <ul class="submenu-bandas">
+                                    <li class="banda"><a href="./nirvana.html">Nirvana</a></li>
+                                    <li class="banda"><a href="./radiohead.html">Radiohead</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -298,8 +331,26 @@
                 </div>
             </div>
 
+        <div class="disco">
+            <div class="info-titulo">
+                <h2 class="titulo-disco">Innovación y legado</h2>
+            </div>
+            <div>
+                <p>Queen destacó por su capacidad de mezclar diversos géneros musicales, desde el rock progresivo hasta la ópera, el funk, el pop y la música clásica. Esta capacidad para trascender fronteras estilísticas inspiró a futuras generaciones de músicos de diversos géneros, incluidos el rock, el metal y el pop.</p>
+                <br><br>
+                <p>El legado de Queen es vasto e innegable. Su capacidad para innovar y experimentar, su teatralidad, y el carisma inigualable de Freddie Mercury hicieron que la banda se convirtiera en una leyenda del rock. Su influencia se extiende mucho más allá de la música, influyendo en la cultura popular y defendiendo la autenticidad y la individualidad.</p>
+            </div>
+        </div>
+
         </section>
     </main>
+
+    <!-- Botón para ir al inicio de la página -->
+    <div class="ir-arriba">
+        <a href="#top" class="btn-flecha">
+            <img width="64" height="64" src="https://img.icons8.com/wired/64/circled-chevron-up.png" alt="circled-chevron-up"/>
+        </a>
+    </div> 
 
     <footer>
         <div class="social-media">

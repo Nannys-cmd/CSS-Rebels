@@ -29,61 +29,86 @@ html {
     margin-top: 20px;
 }
 
-/* Estilos del menú principal */
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    width: 100%;    
+    font-size: 20px;
+    width: 100%;
     background-color: #333;
-    padding: 6px
 }
 
 .opciones {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    gap: 20px;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
-.opciones li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    margin: 0 15px;
-    margin-left: 60px;
+.opciones li {
+    position: relative;
 }
 
-.opciones a {
+.opciones li a {
     font-family: "Montagu Slab", serif;
-    border: 2px solid transparent;/* Borde transparente para evitar que los elementos se muevan */
+    display: block;
+    padding: 15px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    padding: 10px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    text-transform: uppercase;
-    transition: transform 0.3s ease, border 0.3s ease;/* Suaviza las transiciones de color y borde */
+    background-color: #333;
 }
 
-.opciones a:hover {    
-    transform: scale(1.2); /* Agranda el título un 20% */
-    color: #0288d1; /* Cambia el color del título */
-    border: 2px solid #0288d1;/* Hace visible el borde */
-    border-radius: 5px; 
+.opciones li a:hover {
+    background-color: #555;
+}
+
+.opciones a:hover {        
+    color: #0288d1; /* Cambia el color del título */    
+    border-radius: 5px;     
+}
+
+/* Submenú de décadas */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
     
 }
 
-/* Menú desplegable */
-.menu .opciones.show-menu {
+.submenu li {
+    list-style: none;
+    position: relative;
+}
+
+.submenu li a {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Submenú de bandas */
+.submenu-bandas {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #555;
+    width: 200px;
+}
+
+.submenu-opcion:hover .submenu {
     display: block;
 }
+
+.decada:hover .submenu-bandas {
+    display: block;
+}
+
+
 
 
 /* Estilos para las secciones de bandas */
@@ -215,3 +240,30 @@ footer {
 .social-media a:hover {
     color: #ee1413;
 }
+
+/* Contenedor del botón de flecha antes del footer */
+.btn-flecha{
+    padding: 0 15px;
+    margin: -70px 15px;
+}
+
+.ir-arriba {
+    display: flex;
+    justify-content: right;
+    margin-bottom: -15px;
+}
+
+/* Estilos del botón de imagen */
+.btn-flecha img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 50%;
+    background-color: #0288d1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover en el botón de imagen */
+.btn-flecha:hover img {    
+    transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el mouse */
+}
+

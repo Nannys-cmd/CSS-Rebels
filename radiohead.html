@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radiohead - CSS Rebels</title>      
+    <title>CSS Rebels - RadioHead</title>      
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/nirvana.css"> 
     <link rel="stylesheet" href="./CSS/animacion.css">
@@ -23,11 +23,44 @@
                 <!-- Base de la imagen que emite el resplandor -->
                 <div class="bottom_part"></div>
             </div>
-            <nav class="menu">
-                <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+            <nav class="menu">            
                 <ul class="opciones">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Discografia</a></li>             
+                    <li class="submenu-opcion">
+                        <a href="#">Discografía</a>
+                        <ul class="submenu">
+                            <li class="decada">
+                                <a href="#">Década de los 60</a>
+                                <ul class="submenu-bandas">
+                                    <li class="banda"><a href="./TheBeatles.html">The Beatles</a></li>
+                                    <li class="banda"><a href="./RollingStones.html">The Rolling Stones</a></li>
+                                </ul>
+                            </li>
+                            <li class="decada">
+                                <a href="#">Década de los 70</a>
+                                <ul class="submenu-bandas">
+                                    <li class="banda"><a href="./ledzeppelin.html">Led Zeppelin</a></li>
+                                    <li class="banda"><a href="./PinkFloyd.html">Pink Floyd</a></li>
+                                    <li class="banda"><a href="./queen.html">Queen</a></li>
+                                    <li class="banda"><a href="./ACDC.html">AC/DC</a></li>
+                                </ul>
+                            </li>
+                            <li class="decada">
+                                <a href="#">Década de los 80</a>
+                                <ul class="submenu-bandas">
+                                    <li class="banda"><a href="./metallica.html">Metallica</a></li>
+                                    <li class="banda"><a href="./GunsNRoses.html">Guns N' Roses</a></li>
+                                </ul>
+                            </li>
+                            <li class="decada">
+                                <a href="#">Década de los 90</a>
+                                <ul class="submenu-bandas">
+                                    <li class="banda"><a href="./nirvana.html">Nirvana</a></li>
+                                    <li class="banda"><a href="./radiohead.html">Radiohead</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -152,9 +185,37 @@
                     </div>
                 </div>
             </div>
+            <div class="disco">
+                <div class="info-titulo">
+                    <h2 class="titulo-disco">Influencia</h2>
+                </div>
+                <div>
+                    <p>Radiohead es famoso por experimentar con estructuras musicales no convencionales y efectos electrónicos, lo que ayudó a redefinir el rock alternativo a partir de los 90. OK Computer (1997) fue un hito que mezcló guitarras melódicas con letras alienantes, influyendo en el desarrollo del rock experimental y electrónico posterior.</p>
+                    <br>
+                    <p>Fueron pioneros en la adopción de nuevas tecnologías en la industria musical. Su álbum In Rainbows (2007) fue lanzado en un modelo de "paga lo que quieras", lo que rompió paradigmas en la distribución de música digital.</p>
+                    <br>
+                    <p>Radiohead aborda temas de alienación, política, tecnología y crisis existencial, resonando con audiencias globales, y su trabajo ha sido aclamado por su capacidad de capturar las ansiedades modernas.</p>
+                </div>                
+            </div>
+            <div class="disco">
+                <div class="info-titulo">
+                    <h2 class="titulo-disco">Legado</h2>
+                </div>
+            <div>
+                <p>Bandas como Coldplay, Muse, y Arcade Fire citan a Radiohead como una influencia clave, tanto en términos sonoros como en su enfoque conceptual.</p><br>
+                <p>Álbumes como Kid A (2000) rompieron con el rock tradicional, integrando jazz y electrónica, inspirando a músicos a empujar los límites de sus propios géneros.</p><br>
+                <p>Radiohead es visto como un modelo de autenticidad en la industria musical, manteniéndose fieles a su creatividad a lo largo de los años, lo que les ha asegurado un estatus icónico tanto en la crítica como entre sus seguidores.</p>
+            </div>
 
         </section>
     </main>
+
+    <!-- Botón para ir al inicio de la página -->
+    <div class="ir-arriba">
+        <a href="#top" class="btn-flecha">
+            <img width="64" height="64" src="https://img.icons8.com/wired/64/circled-chevron-up.png" alt="circled-chevron-up"/>
+        </a>
+    </div> 
 
     <footer>
         <div class="social-media">
