@@ -14,6 +14,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem; /* Tamaño base de fuente */
     color: #333; /* Color de texto por defecto */
+<<<<<<< HEAD
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> Daniela
 }
 
 /* Configuración del html para smooth scrolling */
@@ -21,6 +26,25 @@ html {
     scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
+=======
+/* Estilos globales */
+h1, h2 {
+    font-family: 'Montagu Slab', serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+>>>>>>> Daniela
 /* Estilos para el título principal */
 .titulo {
     text-align: center;
@@ -29,6 +53,18 @@ html {
     margin-top: 20px;
 }
 
+<<<<<<< HEAD
+=======
+/* Estilos del header */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos del menú de navegación */
+>>>>>>> Daniela
 .menu {
     font-size: 20px;
     width: 100%;
@@ -58,11 +94,16 @@ html {
 
 .opciones li a:hover {
     background-color: #555;
+<<<<<<< HEAD
 }
 
 .opciones a:hover {        
     color: #0288d1; /* Cambia el color del título */    
     border-radius: 5px;     
+=======
+    color: #0288d1; /* Cambia el color del título */
+    border-radius: 5px;
+>>>>>>> Daniela
 }
 
 /* Submenú de décadas */
@@ -76,11 +117,18 @@ html {
     padding: 0;
     margin: 0;
     width: 200px;
+<<<<<<< HEAD
     
 }
 
 .submenu li {
     list-style: none;
+=======
+    z-index: 10;
+}
+
+.submenu li {
+>>>>>>> Daniela
     position: relative;
 }
 
@@ -90,7 +138,10 @@ html {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /* Submenú de bandas */
+=======
+>>>>>>> Daniela
 .submenu-bandas {
     display: none;
     position: absolute;
@@ -100,18 +151,26 @@ html {
     width: 200px;
 }
 
+<<<<<<< HEAD
 .submenu-opcion:hover .submenu {
     display: block;
 }
 
+=======
+.submenu-opcion:hover .submenu,
+>>>>>>> Daniela
 .decada:hover .submenu-bandas {
     display: block;
 }
 
+<<<<<<< HEAD
 
 
 
 /* Estilos para las secciones de bandas */
+=======
+/* Estilos de las secciones */
+>>>>>>> Daniela
 .banda {
     margin: 20px auto;
     padding: 20px;
@@ -121,6 +180,7 @@ html {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 .titulo-banda{
     transition: transform 0.4s ease;
 }
@@ -134,16 +194,44 @@ html {
 }
 
 .discografia-disco a{
+=======
+.banda p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.titulo-banda {
+    transition: transform 0.4s ease;
+}
+
+.titulo-banda:hover {
+    transform: scale(1.5);
+}
+
+/* Estilo de los discos */
+.discografia-disco {
+    margin: 7px;
+}
+
+.discografia-disco a {
+>>>>>>> Daniela
     color: white;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 .discografia-disco a:hover{
+=======
+.discografia-disco a:hover {
+>>>>>>> Daniela
     color: orange; /* Cambia el color del título */
 }
 
 /* Colores personalizados para cada banda */
 .banda.nirvana {
+<<<<<<< HEAD
     background-color: #00274d; /* Azul oscuro, representando la atmósfera del grunge */
     color: #f5f5dc; /* Amarillo pálido para un buen contraste */
 }
@@ -197,6 +285,55 @@ html {
 img {
     max-width: 100%;
     height: auto;
+=======
+    background-color: #00274d;
+    color: #f5f5dc;
+}
+
+.banda.queen {
+    background-color: #8b0000;
+    color: #ffd700;
+}
+
+.banda.beatles {
+    background-color: #d3d3d3;
+    color: #003366;
+}
+
+.banda.led-zeppelin {
+    background-color: #000;
+    color: #ffd700;
+}
+
+.banda.pink-floyd {
+    background-color: #000;
+    color: #ff00ff;
+}
+
+.banda.metallica {
+    background-color: #333;
+    color: #fff;
+}
+
+.banda.acdc {
+    background-color: #000;
+    color: #ff0000;
+}
+
+.banda.rolling-stones {
+    background-color: #6a0d91;
+    color: #fff;
+}
+
+.banda.radiohead {
+    background-color: #b0c4de;
+    color: #000;
+}
+
+.banda.guns-n-roses {
+    background-color: #c8102e;
+    color: #ffd700;
+>>>>>>> Daniela
 }
 
 /* Centrar las imágenes */
@@ -211,6 +348,7 @@ img {
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
 /* Estilo de los párrafos dentro de las secciones de bandas */
 .banda p {
     text-align: justify;
@@ -219,6 +357,8 @@ img {
     margin: 20px 0;
 }
 
+=======
+>>>>>>> Daniela
 /* Estilos para el footer */
 footer {
     background-color: #e2d4cc;
@@ -241,8 +381,13 @@ footer {
     color: #ee1413;
 }
 
+<<<<<<< HEAD
 /* Contenedor del botón de flecha antes del footer */
 .btn-flecha{
+=======
+/* Botón de flecha */
+.btn-flecha {
+>>>>>>> Daniela
     padding: 0 15px;
     margin: -70px 15px;
 }
@@ -253,17 +398,28 @@ footer {
     margin-bottom: -15px;
 }
 
+<<<<<<< HEAD
 /* Estilos del botón de imagen */
 .btn-flecha img {
     width: 50px; /* Ajusta el tamaño de la imagen */
+=======
+.btn-flecha img {
+    width: 50px;
+>>>>>>> Daniela
     height: auto;
     border-radius: 50%;
     background-color: #0288d1;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+<<<<<<< HEAD
 /* Efecto hover en el botón de imagen */
 .btn-flecha:hover img {    
     transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el mouse */
 }
 
+=======
+.btn-flecha:hover img {
+    transform: scale(1.1);
+}
+>>>>>>> Daniela
