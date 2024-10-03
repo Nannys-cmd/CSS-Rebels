@@ -1,8 +1,10 @@
-// Seleccionamos el botón y el menú
-const navToggle = document.querySelector('.nav-toggle');
-const menu = document.querySelector('.opciones');
+// Asegúrate de que este script se ejecute después de que el DOM se haya cargado
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.opciones');
 
-// Evento de clic para alternar el menú
-navToggle.addEventListener('click', () => {
-    menu.classList.toggle('show-menu');
+    navToggle.addEventListener('click', () => {
+        console.log('Hamburguesa clickeada'); // Agrega esto para depuración
+        navMenu.classList.toggle('show-menu');
+    });
 });
