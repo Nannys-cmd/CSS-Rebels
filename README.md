@@ -16,7 +16,7 @@ Mejoramos la visual, cumpliendo las consignas pedidas en el TP Final
 - Karem Nuñez Rivera
 - Laura Cecilia Esplugas - [GitHub](https://github.com/lauraesplugas2022)
 - Luciano Altavista - [GitHub](https://github.com/LucianoAltavista)
-- Matias Nuñez
+- Matias Nuñez - [GitHub](https://github.com/Verlowren)
 - Nairim Amaya
 - Nicolás Cruzate
 - Ornella Demestri - [GitHub](https://github.com/Dola1792)
