@@ -13,7 +13,7 @@ Mejoramos la visual, cumpliendo las consignas pedidas en el TP Final
 - Cristian Agustin Zarate - [GitHub](https://github.com/Zar2912)
 - Daniela Bastias - [GitHub](https://github.com/Nannys-cmd/)
 - Dario Tamini - [GitHub](https://github.com/Daro2080)
-- Karem Nuñez Rivera
+- Karem Nuñez Rivera [GitHub](https://github.com/Kali2lou)
 - Laura Cecilia Esplugas - [GitHub](https://github.com/lauraesplugas2022)
 - Luciano Altavista - [GitHub](https://github.com/LucianoAltavista)
 - Matias Nuñez - [GitHub](https://github.com/Verlowren)
